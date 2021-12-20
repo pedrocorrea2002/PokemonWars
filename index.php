@@ -15,6 +15,10 @@
    <script src="explosao.js"></script>
    <script src="painel.js"></script>
    <style>
+   *{
+      padding: 0px;
+      margin: 0px;
+   }
    #link_jogar {
       /* Inicia oculto */
       display: none;
