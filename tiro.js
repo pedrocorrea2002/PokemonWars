@@ -16,8 +16,8 @@ function Tiro(context, nave, imagem) {
    this.imagem = imagem;
 
    // Posicionar o tiro no bico da nave
-   this.largura = 3;
-   this.altura = 10;   
+   this.largura = 1;
+   this.altura = 30;   
    this.x = nave.x + 18;  // 36 / 2
    this.y = nave.y - this.altura;
    this.velocidade = 400;
@@ -38,15 +38,15 @@ Tiro.prototype = {
       }
    },
    desenhar: function() {
-      // var ctx = this.context;
-      // ctx.save();
-      // ctx.fillStyle = this.cor;
-      // ctx.fillRect(this.x, this.y, this.largura, this.altura);
-      // ctx.restore();
-
       var ctx = this.context;
-      img.src = './img/tiro.png'
-      ctx.drawImage(img, this.x - 6, this.y, img.width, img.height);
+      // ctx.save();
+      ctx.fillStyle = this.cor;
+      ctx.fillRect(this.x, this.y, this.largura, this.altura);
+      ctx.restore();
+
+      //var ctx = this.context;
+      //img.src = './img/tiro.png'
+      //ctx.drawImage(img, this.x - 6, this.y, img.width, img.height);
    },
    retangulosColisao: function() {
       return [ {x: this.x, y: this.y, largura: this.largura,
