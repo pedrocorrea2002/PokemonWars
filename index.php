@@ -2,7 +2,7 @@
 <html>
    
 <head>
-   <title>PokemonWars</title>
+   <title>Pokemon wars</title>
    <script src="animacao.js"></script>
    <script src="teclado.js"></script>
    <script src="colisor.js"></script>
