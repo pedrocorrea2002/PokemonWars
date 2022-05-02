@@ -2,7 +2,7 @@
 <html>
    
 <head>
-   <title>Jogo de Nave</title>
+   <title>PokemonWars</title>
    <script src="animacao.js"></script>
    <script src="teclado.js"></script>
    <script src="colisor.js"></script>
